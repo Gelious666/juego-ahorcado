@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <div id="contenido">
+    <h1 id="title">Juego del Ahorcado</h1>
+    <p id="subtitle">Introduce una letra</p>
+<!-- creamos una entrada de texto el cual limitamos a una sola letra-->
+    <input type="text" maxlength="1" id="letra"> 
+<!--creamos un boton para poder enviar la letra-->
+    <button id="calcular" value="ent">Enviar</button>
+
+<p id="salida"></p>
+<div id="ahorcado"></div>
+
+<div id="ganador">
+<h1 id="victory">Victoria</h1>
+<input id="renew" type="button" value="Jugar de Nuevo" onclick="location.reload()">
+</div>
+
+
+
+<div id="perdedor">
+<h1 id="loser">Perdiste</h1>
+<p>Acuestate y hazte bolita :"v</p>
+<p>Tu palabra era:</p>
+<p id="tup"> </p>
+<input id="renew" type="button" value="Jugar de Nuevo" onclick="location.reload()">
+</div>
+
+    
+</div>
+    <script src="main.js"></script>
+    </div>
+
+<footer>
+    
+        <h2 id="bsp">Este espacio esta en blanco para que se vea el capitan Jack Sparrow xd</h2>
+    
+</footer>
+
+</body>
+</html>
